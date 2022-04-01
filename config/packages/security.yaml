@@ -57,6 +57,7 @@ security:
                 service: Symfony\Component\Ldap\Ldap
                 login_path: login
                 check_path: login
+                enable_csrf: true
                 search_dn: '%env(resolve:LDAP_SERVER_SEARCH_DN)%'
                 search_password: '%env(resolve:LDAP_SERVER_SEARCH_PASSWORD)%'
                 dn_string: '{username}'
